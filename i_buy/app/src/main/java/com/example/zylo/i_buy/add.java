@@ -5,23 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class list extends AppCompatActivity {
+public class add extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_add);
     }
 
     /** Called when the user clicks the button */
-    public void to_main(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    /** Called when the user clicks the button */
-    public void to_add(View view2) {
-        Intent intent = new Intent(this, add.class);
+    public void to_list(View view) {
+        Intent intent = new Intent(this, list.class);
         startActivity(intent);
     }
 }
