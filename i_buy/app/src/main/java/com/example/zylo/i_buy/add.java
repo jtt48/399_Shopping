@@ -15,6 +15,7 @@ public class add extends AppCompatActivity {
 
     /** Called when the user clicks the button */
     public void to_list(View view) {
+        db.set_name("Tomatto");
         Intent intent = new Intent(this, list.class);
         startActivity(intent);
     }
